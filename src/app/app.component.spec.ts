@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'salliator-frontend'`, () => {
+  it(`should have as title 'salliter-frontend'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('salliator-frontend');
+    expect(app.title).toEqual('salliter-frontend');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('salliator-frontend app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('salliter-frontend app is running!');
   });
 });

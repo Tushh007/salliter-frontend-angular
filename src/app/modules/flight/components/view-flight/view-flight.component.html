@@ -1,0 +1,44 @@
+<div fxFlex="value%" fxFlexAlign="center">
+  <h1 align="center">Search Results</h1>
+</div>
+
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+  <ng-container matColumnDef="Source">
+    <th mat-header-cell *matHeaderCellDef>Source</th>
+    <td mat-cell *matCellDef="let flight">{{flight.source}}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="Destination">
+    <th mat-header-cell *matHeaderCellDef>Destination</th>
+    <td mat-cell *matCellDef="let flight">{{flight.destination}}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="Airline">
+    <th mat-header-cell *matHeaderCellDef>Airline</th>
+    <td mat-cell *matCellDef="let flight">{{flight.airline}}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="Travel Time">
+    <th mat-header-cell *matHeaderCellDef> Travel Timve </th>
+    <td mat-cell *matCellDef="let flight">{{flight.travel_time}}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="Platform">
+    <th mat-header-cell *matHeaderCellDef>Platform</th>
+    <td mat-cell *matCellDef="let flight">{{flight.platform}}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="Coupon">
+    <th mat-header-cell *matHeaderCellDef>Coupon</th>
+    <td mat-cell *matCellDef="let flight">{{flight.coupon}}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="Date">
+    <th mat-header-cell *matHeaderCellDef>Date</th>
+    <td mat-cell *matCellDef="let flight">{{flight.date}}</td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>

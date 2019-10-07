@@ -1,0 +1,51 @@
+.login-card {
+  background-color: rgba(249,248,252,0.925);
+  max-width: 80rem;
+  position: inherit;
+  justify-content: center;
+  text-align: center;
+}
+
+button {
+  background-color:  rgb(206, 14, 17);;
+  color: white;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+.login-form {
+  width: 100%;
+}
+
+.center{
+  width: 75%;
+  margin: 10px auto;
+}
+
+.login{
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+mat-card-header {
+  justify-content: center;
+  color:  rgb(206, 14, 17);;
+}
+
+.login-full-width {
+  width: 50vh;
+}
+
+a {
+  color:  rgb(206, 14, 17);;
+  font-size: 1rem;
+}
+
+
+
